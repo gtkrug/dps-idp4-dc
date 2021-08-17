@@ -4,6 +4,7 @@ IDP4 Dataconnector for Texas DPS
 This includes 3 data connectors.  One test connector that reads attribute files found on the filesystem, one that queries an internal TXDPS webservice, and one that queries IIR's 28CFR Certification Checking Service.
 
 Sample configurations are available here:
+
     <DataConnector id="GfipmTest" xsi:type="txdps:Test"
                    pathToAttributeFiles="/opt/idp4/users/"
                    uidAttribute="uid">
