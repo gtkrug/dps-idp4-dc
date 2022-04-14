@@ -166,7 +166,7 @@ public class TestDataConnector extends AbstractDataConnector {
         strPrincipal.replace ('\\', '-');
         strPrincipal.replace ('=', '_');
 
-        String strFileName = pathToUserAttributeFiles + strPrincipal + ".attr";
+        String strFileName = pathToUserAttributeFiles + strPrincipal.toLowerCase();
 
         log.debug ("Trying to load attribute file: " + strFileName + "\n");
 
