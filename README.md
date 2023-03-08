@@ -29,4 +29,8 @@ Sample configurations are available here:
 
 The above IIRQuery sample queries the IIR test service that always returns incomplete testing.  For production the queryUrl would be https://tca.iir.com/api/Lookup?code=
 
-
+The latest Shibboleth release (4.3 and possibly 4.2) have changed how they parse the schemaLocation field in the attribute-resolver.xml file.  What typically worked in the past will no longer work.  It should look something like the following:
+   <AttributeResolver
+        xmlns:txdps="urn:global:txdps:4.1:resolver"
+        xsi:schemaLocation="urn:mace:shibboleth:2.0:resolver http://shibboleth.net/schema/idp/shibboleth-attribute-resolver.xsd
+                            urn:global:txdps:4.1:resolver classpath:/schema/txdps-4.1-resolver.xsd">
