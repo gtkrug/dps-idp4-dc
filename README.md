@@ -34,6 +34,6 @@ The latest Shibboleth release (4.3 and possibly 4.2) have changed how they parse
      <AttributeResolver
         xmlns:txdps="urn:global:txdps:4.1:resolver"
         xsi:schemaLocation="urn:mace:shibboleth:2.0:resolver http://shibboleth.net/schema/idp/shibboleth-attribute-resolver.xsd
-                            urn:global:txdps:4.1:resolver classpath:/schema/txdps-4.1-resolver.xsd">
+                            urn:global:txdps:4.1:resolver schema/txdps-4.1-resolver.xsd">
 
     
